@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site.title">Abyss's Space</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__overlay">
+            <div class="loader__hud">
+                <div class="loader__brand" data-i18n="site.title">ABYSS'S SPACE</div>
+                <div class="loader__rec">[REC]</div>
+                <div class="loader__stats">
+                    <div class="loader__percent">000</div>
+                    <div class="loader__status" data-i18n="loader.status">SYSTEM INITIALIZING</div>
+                    <div class="loader__version">v1.0.0</div>
+                </div>
+                <div class="loader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav__brand" data-i18n="site.title">ABYSS'S SPACE</div>
+            <div class="nav__links">
+                <a href="#about" class="nav__link" data-i18n="nav.about">ABOUT</a>
+                <a href="#announcements" class="nav__link" data-i18n="nav.announcements">ANNOUNCEMENTS</a>
+                <a href="#thanks" class="nav__link" data-i18n="nav.thanks">THANKS</a>
+                <a href="#sponsor" class="nav__link" data-i18n="nav.sponsor">SPONSOR</a>
+                <a href="#contact" class="nav__link" data-i18n="nav.contact">CONTACT</a>
+                <button class="nav__lang-toggle" id="langToggle">
+                    <span class="nav__lang-option nav__lang-option--active">CN</span>
+                    <span class="nav__lang-divider">|</span>
+                    <span class="nav__lang-option">EN</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Side Navigation Indicator -->
+        <div class="side-nav">
+            <a href="#about" class="side-nav__item side-nav__item--active"></a>
+            <a href="#announcements" class="side-nav__item"></a>
+            <a href="#thanks" class="side-nav__item"></a>
+            <a href="#sponsor" class="side-nav__item"></a>
+            <a href="#contact" class="side-nav__item"></a>
+        </div>
+
+        <!-- HUD Elements -->
+        <div class="hud">
+            <div class="hud__coords">
+                <div class="hud__label">CURSOR</div>
+                <div class="hud__value">0px, 0px</div>
+            </div>
+            <div class="hud__scroll-hint">
+                <div class="hud__scroll-line"></div>
+                <div class="hud__scroll-dot"></div>
+            </div>
+            <div class="hud__corner hud__corner--tl"></div>
+            <div class="hud__corner hud__corner--tr"></div>
+            <div class="hud__corner hud__corner--bl"></div>
+            <div class="hud__corner hud__corner--br"></div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section section--hero">
+            <div class="section__number">01</div>
+            <div class="section__label">// ABOUT</div>
+            <div class="section__underline"></div>
+            <div class="section__content">
+                <h1 class="hero__title" data-i18n="about.title">Welcome to Abyss's Space</h1>
+                <p class="hero__subtitle" data-i18n="about.subtitle">Developer / Creator / Explorer</p>
+                <div class="about__bio">
+                    <p data-i18n="about.bio.p1">
+                        在这里，代码与创意交织，构建连接虚拟与现实的桥梁。
+                    </p>
+                    <p data-i18n="about.bio.p2">
+                        专注于 Web 开发、开源项目与技术探索，致力于创造有价值的数字体验。
+                    </p>
+                </div>
+                <div class="specs">
+                    <div class="specs__item">
+                        <span class="specs__label" data-i18n="about.specs.role">ROLE</span>
+                        <span class="specs__value" data-i18n="about.specs.roleValue">Full Stack Developer</span>
+                    </div>
+                    <div class="specs__item">
+                        <span class="specs__label" data-i18n="about.specs.focus">FOCUS</span>
+                        <span class="specs__value" data-i18n="about.specs.focusValue">Web / Open Source</span>
+                    </div>
+                    <div class="specs__item">
+                        <span class="specs__label" data-i18n="about.specs.status">STATUS</span>
+                        <span class="specs__value specs__value--active" data-i18n="about.specs.statusValue">ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section id="announcements" class="section">
+            <div class="section__number">02</div>
+            <div class="section__label">// ANNOUNCEMENTS</div>
+            <div class="section__underline"></div>
+            <div class="section__content">
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card__corner card__corner--tl"></div>
+                        <div class="card__corner card__corner--br"></div>
+                        <div class="card__index">01</div>
+                        <div class="card__date">2026.11.31</div>
+                        <h3 class="card__title" data-i18n="announcements.item1.title">网站正式上线</h3>
+                        <p class="card__desc" data-i18n="announcements.item1.desc">
+                            Abyss's Space 正式启动，采用终末地工业编辑风设计，带来全新的视觉体验。
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="card__corner card__corner--tl"></div>
+                        <div class="card__corner card__corner--br"></div>
+                        <div class="card__index">02</div>
+                        <div class="card__date">2026.10.06</div>
+                        <h3 class="card__title" data-i18n="announcements.item2.title">新项目筹备中</h3>
+                        <p class="card__desc" data-i18n="announcements.item2.desc">
+                            多个开源项目正在筹备阶段，敬请期待后续更新。
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="card__corner card__corner--tl"></div>
+                        <div class="card__corner card__corner--br"></div>
+                        <div class="card__index">03</div>
+                        <div class="card__date">XXXX.XX.XX</div>
+                        <h3 class="card__title" data-i18n="announcements.item3.title">技术栈更新</h3>
+                        <p class="card__desc" data-i18n="announcements.item3.desc">
+                            采用最新的 Web 技术栈，提升开发效率与用户体验。
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thanks Section -->
+        <section id="thanks" class="section">
+            <div class="section__number">03</div>
+            <div class="section__label">// THANKS</div>
+            <div class="section__underline"></div>
+            <div class="section__content">
+                <p class="section__intro" data-i18n="thanks.intro">
+                    感谢以下项目与个人的支持与启发
+                </p>
+                <div class="thanks-grid">
+                    <div class="thanks-item">
+                        <div class="thanks-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4 class="thanks-item__title" data-i18n="thanks.item1.title">明日方舟：终末地</h4>
+                        <p class="thanks-item__desc" data-i18n="thanks.item1.desc">提供了工业编辑风设计灵感</p>
+                    </div>
+                    <div class="thanks-item">
+                        <div class="thanks-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4 class="thanks-item__title" data-i18n="thanks.item2.title">开源社区</h4>
+                        <p class="thanks-item__desc" data-i18n="thanks.item2.desc">无数开发者的无私贡献</p>
+                    </div>
+                    <div class="thanks-item">
+                        <div class="thanks-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h4 class="thanks-item__title" data-i18n="thanks.item3.title">支持者们</h4>
+                        <p class="thanks-item__desc" data-i18n="thanks.item3.desc">感谢每一位访客的支持</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsor Section -->
+        <section id="sponsor" class="section">
+            <div class="section__number">04</div>
+            <div class="section__label">// SPONSOR</div>
+            <div class="section__underline"></div>
+            <div class="section__content">
+                <p class="section__intro" data-i18n="sponsor.intro">
+                    如果你喜欢我的工作，可以通过以下方式支持
+                </p>
+                <div class="sponsor-options">
+                    <div class="sponsor-card">
+                        <div class="sponsor-card__header">
+                            <svg class="sponsor-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                <line x1="2" y1="10" x2="22" y2="10"/>
+                            </svg>
+                            <h3 class="sponsor-card__title" data-i18n="sponsor.method1.title">支付宝</h3>
+                        </div>
+                        <p class="sponsor-card__desc" data-i18n="sponsor.method1.desc">
+                            通过支付宝进行赞助
+                        </p>
+                        <div class="sponsor-qr">
+                            <div class="sponsor-qr__frame">
+                                <div class="sponsor-qr__corner sponsor-qr__corner--tl"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--tr"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--bl"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--br"></div>
+                                <img src="alipay.png" alt="支付宝收款码" class="sponsor-qr__img">
+                            </div>
+                            <div class="sponsor-qr__label">ALIPAY</div>
+                        </div>
+                    </div>
+                    <div class="sponsor-card">
+                        <div class="sponsor-card__header">
+                            <svg class="sponsor-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            </svg>
+                            <h3 class="sponsor-card__title" data-i18n="sponsor.method2.title">微信支付</h3>
+                        </div>
+                        <p class="sponsor-card__desc" data-i18n="sponsor.method2.desc">
+                            通过微信支付进行赞助
+                        </p>
+                        <div class="sponsor-qr">
+                            <div class="sponsor-qr__frame">
+                                <div class="sponsor-qr__corner sponsor-qr__corner--tl"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--tr"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--bl"></div>
+                                <div class="sponsor-qr__corner sponsor-qr__corner--br"></div>
+                                <img src="wxp.png" alt="微信收款码" class="sponsor-qr__img">
+                            </div>
+                            <div class="sponsor-qr__label">WECHAT PAY</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor-note">
+                    <p data-i18n="sponsor.note">
+                        所有赞助将用于服务器维护、域名续费以及开源项目的持续开发。你的支持是我前进的动力！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section__number">05</div>
+            <div class="section__label">// CONTACT</div>
+            <div class="section__underline"></div>
+            <div class="section__content">
+                <p class="section__intro" data-i18n="contact.intro">
+                    欢迎通过以下方式联系我
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:AbyssFlite@gmail.com" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M22 7l-10 7L2 7"/>
+                        </svg>
+                        <span class="contact-item__label">EMAIL</span>
+                        <span class="contact-item__value">AbyssFlite@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/Aoi-Karlin" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                        <span class="contact-item__label">GITHUB</span>
+                        <span class="contact-item__value">@Aoi-Karlin</span>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+                        </svg>
+                        <span class="contact-item__label">X (TWITTER)</span>
+                        <span class="contact-item__value" data-i18n="contact.x">@yourusername</span>
+                    </a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                        <span class="contact-item__label">DISCORD</span>
+                        <span class="contact-item__value">nekoamiya</span>
+                    </a>
+                    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=-oJiv-nCvDonSOtnU17HE7Elud_lasL0" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+                            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+                        </svg>
+                        <span class="contact-item__label">QQ</span>
+                        <span class="contact-item__value" data-i18n="contact.qq">3978983131</span>
+                    </a>
+                    <a href="https://qm.qq.com/q/8aIjeLqrWo" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span class="contact-item__label">QQ GROUP</span>
+                        <span class="contact-item__value" data-i18n="contact.qqGroup">1067790453</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__stripe"></div>
+            <div class="footer__content">
+                <p class="footer__text">
+                    <span data-i18n="footer.copyright">© 2026 Abyss. All rights reserved.</span>
+                    <span class="footer__divider">|</span>
+                    <span data-i18n="footer.powered">Powered by Endfield Style</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
